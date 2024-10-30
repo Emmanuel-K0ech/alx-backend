@@ -6,7 +6,7 @@ from collections import OrderedDict
 # base_caching = __import__('base_caching').BaseCaching
 
 
-class FIFOCache(base_caching):
+class FIFOCache(BaseCaching):
     """
     Create a class FIFOCache that inherits from BaseCaching
     and is a caching system:

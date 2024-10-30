@@ -13,7 +13,7 @@ class LIFOCache(BaseCaching):
     def __init__(self):
         """ instantiation of the class """
         super().__init__()
-        self.cache.data = OrderedDict()
+        self.cache_data = OrderedDict()
 
     def put(self, key, item):
         """ method to put data to dictionary"""

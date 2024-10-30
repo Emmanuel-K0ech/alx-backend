@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 """ Module 1-fifo_cache.py """
 
-# from base_caching import BaseCaching
+from base_caching import BaseCaching
 from collections import OrderedDict
-base_caching = __import__('base_caching').BaseCaching
 
 
-class LIFOCache(base_caching):
+class LIFOCache(BaseCaching):
     """
     Create a class FIFOCache that inherits from BaseCaching
     and is a caching system:
@@ -22,7 +21,7 @@ class LIFOCache(base_caching):
             return
 
         if key not in self.cache_data:
-            if len(self.cache_data) + 1 > base_caching.MAX_ITEMS:
+            if len(self.cache_data) + 1 > BaseCaching.MAX_ITEMS:
                 last_item, _ = self.cache_data.popitem(True)
                 print("DISCARD:", last_item)
         self.cache_data[key] = item

@@ -13,5 +13,5 @@ class Config():
 
 
 @app.route("/")
-def hello() -> str:
+def hello():
     return "<h1>Hello world</h1>"

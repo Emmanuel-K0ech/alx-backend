@@ -15,4 +15,4 @@ class Config():
 @app.route("/")
 def hello():
     """ flask route '/' """
-    return "<h1>Hello world</h1>"
+    return "<title>Welcome to Holberton</title>"

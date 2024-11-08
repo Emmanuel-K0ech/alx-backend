@@ -19,5 +19,5 @@ def hello():
     """ flask route '/' """
     return "<title>Welcome to Holberton</title>"
 
-#what does it mean to use Config to set Babel's default locale
+# what does it mean to use Config to set Babel's default locale
 # app.config.from_object(Config)
